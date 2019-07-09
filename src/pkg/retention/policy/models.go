@@ -26,7 +26,7 @@ const (
 // Metadata of policy
 type Metadata struct {
 	// UUID of the policy
-	ID string `json:"id"`
+	ID int `json:"id"`
 
 	// Algorithm applied to the rules
 	// "OR" / "AND"
@@ -68,7 +68,7 @@ type Scope struct {
 
 	// The reference identity for the specified level
 	// '' for 'system', project ID for 'project' and repo ID for 'repository'
-	Reference string `json:"ref"`
+	Reference int `json:"ref"`
 }
 
 // LiteMeta contains partial metadata of policy
